@@ -8,6 +8,7 @@ library(factoextra)
 library(stats)
 
 ExamplePats <- med.events
+write.csv(ExamplePats, "ExamplePats.csv")
 tidy <- ExamplePats
 colnames(tidy) <- c("pnr", "eksd", "perday", "ATC", "dur_original")
 tidy$eksd <- mdy(tidy$eksd)
