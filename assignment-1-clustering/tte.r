@@ -6,10 +6,10 @@ library(TrialEmulation)
 trial_pp  <- trial_sequence(estimand = "PP")  # Per-protocol
 trial_itt <- trial_sequence(estimand = "ITT") # Intention-to-treat
 
-trial_pp_dir  <- file.path(tempdir(), "trial_pp")
+trial_pp_dir  <- file.path(getwd(), "assignment-1-clustering", "trial_pp")
 dir.create(trial_pp_dir)
 
-trial_itt_dir <- file.path(tempdir(), "trial_itt")
+trial_itt_dir <- file.path(getwd(), "assignment-1-clustering", "trial_itt")
 dir.create(trial_itt_dir)
 
 data("data_censored") # dummy data in the package
